@@ -1,0 +1,35 @@
+#tagged{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    width: 99%;
+    padding: 1%;
+    margin: 0;
+}
+.heading{
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    line-height: 1.8em;
+}
+#projects{
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
+    
+ 
+}
+.project{
+ height: 300px;   
+}
+.project-banner{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.project-banner img{
+    height: 80%;
+    width: 80%;
+}

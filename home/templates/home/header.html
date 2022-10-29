@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block title %}
+        
+    {% endblock title %}
+        </title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'home/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'home/css/header.css' %}">
+        <link rel="stylesheet" href="{% static 'home/owl/dist/assets/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static  'home/jquery-ui/jquery-ui.min.css' %}">
+        <link rel="stylesheet" href="{% static  'home/jquery-ui/jquery-ui.structure.min.css'  %}">
+        <link rel="stylesheet" href="{% static 'home/jquery-ui/jquery-ui.theme.min.css'  %}">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header" >
+        <div id="brand">
+            <h2 class="navbar-brand">Groove Street Memorial</h2>
+        </div>
+        <div id="nav">
+            <div id="search">
+                <form action="" method="GET">
+                    <input type="search" >
+                </form>
+            </div>
+            <div id="links">
+                <a class="btn btn-light" href="">Home</a>
+                <a class="btn btn-light" href="">Blog</a>
+            </div>
+        </div>
+    </div>
+    
+    {% block dashboard %}
+        
+    {% endblock dashboard %}
+        
+    <div id="block">
+        
+        {% block content %}
+            
+        {% endblock content %}
+            
+    </div>
+
+
+    {% block bootstrap %}
+       <script src="{% static 'home/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    {% endblock bootstrap %}
+    
+    {% block jquery %}
+    <script src="{% static 'home/jquery/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'home/jquery-ui/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'home/jquery-ui/jquery.timepicker.min.js' %}"></script>
+    {% endblock jquery %}
+
+                
+    {% block jscript %}
+        
+    {% endblock jscript %}
+
+    
+    {% block javascript %}
+       
+    {% endblock javascript %}
+        
+        
+    
+</body>
+</html>

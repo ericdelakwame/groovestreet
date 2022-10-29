@@ -1,0 +1,24 @@
+{% extends 'home/header.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block title %}
+New Carousel Image
+    
+{% endblock title %}
+    
+
+{% block content %}
+<div id="form-container" class="pt-5">
+    <form action="" class="form-control" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form|crispy}}
+        <button type="submit" class="btn btn-success">
+            Continue
+        </button>
+    </form>
+</div>
+    
+{% endblock content %}
+    

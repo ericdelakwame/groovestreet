@@ -1,0 +1,21 @@
+{% extends 'home/header.html' %}
+{% load static %}
+
+
+{% block title %}
+Sign In To Continue
+    
+{% endblock title %}
+    
+
+{% block content %}
+<div id="login">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Continue</button>
+    </form>
+</div>
+    
+{% endblock content %}
+    

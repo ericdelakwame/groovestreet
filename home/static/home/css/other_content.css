@@ -1,0 +1,5 @@
+#press, #resources, #manifesto{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}

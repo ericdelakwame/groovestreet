@@ -1,0 +1,47 @@
+{% extends 'home/header.html' %}
+{% load static %}
+
+
+
+{% block title %}
+    Dashboard
+{% endblock title %}
+    
+
+{% block dashboard %}
+<head>
+    <link rel="stylesheet" href="{% static 'dashboard/css/dashboard.css' %}">
+</head>
+<div id="dashboard-menu">
+<nav class="nav">
+    
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Blog Content
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">New Topic</a></li>
+          <li><a class="dropdown-item" href="#">All Topics</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Home Page Content
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="{% url 'dashboard:new_carousel_image' %}">Add Image To Carousel</a></li>
+         
+        </ul>
+      </div>
+</nav>
+</div>    
+{% endblock dashboard %}
+    
+{% block content %}
+
+<div id="dashboard">
+    <h1>Dashboard</h1>
+</div>
+    
+{% endblock content %}
+    

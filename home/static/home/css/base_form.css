@@ -1,0 +1,105 @@
+
+#form-container{
+   
+    height: 100%;
+    margin-left: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 30px;
+    gap: 20px;
+    
+}
+
+#form{
+    color: #EEE;
+    gap: 10px;
+    display: flex;
+    flex-flow: column wrap;
+  
+   
+   
+    
+}
+label{
+    font-size: 16px;
+    text-transform: uppercase;
+    /* padding: 5px; */
+    letter-spacing: 1px;
+}
+input,  textarea{
+    padding: 10px;
+    width: 80%;
+    /* border: none;
+    border-radius: 10px; */
+}
+select{
+    width: 40%;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.helptext{
+    background-color: #eee;
+    color: #000;
+    min-height: 50px;
+    width: 300px;
+    padding: 10px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+
+}
+ul{
+    padding: 10px;
+    list-style: none;
+}
+
+li{
+    list-style: disc;
+
+}
+#form-btn{
+    display: block;
+    width: 300px;
+    height: 30px;
+    color: #EEE;
+    background-color: #808080;
+    border-radius: 8px;
+    padding: 8px;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+#id_gender{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    align-items: center;
+    gap: 10px;
+    min-height: 30px;
+    
+}
+.gender-choice li, input[type="radio"]{
+    list-style: none;
+    max-width: 300px;
+    border-radius: 8px;
+    
+}
+
+.gender-choice:hover{
+    background-color: #EEE;
+    transition: 2s;
+    color: #141414;
+    border-radius: 8px;
+    width: fit-content;
+   
+    
+    
+}
+.mw-wrap{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    align-items: center;
+   
+    
+}

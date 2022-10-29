@@ -1,0 +1,165 @@
+/* html{
+    height: 100%;
+} */
+#post-detail{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    width: 95%;
+    padding: 1%;
+    margin: auto;
+}
+#post-detail-nav {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#post-detail-nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #808080;
+    color: #FFF;
+
+}
+#red{
+    color: red;
+}
+.post-banner{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+#post-detail{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+#post-images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    
+    
+
+}
+#image-container{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+#post-images img{
+    height: 100%;
+    width: 100%;
+    
+}
+#tags{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+#tag-links{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+#tag-links a{
+    text-transform: capitalize;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #808080;
+    color: #eee;
+    text-align: center;
+    font-size: 100%;
+}
+
+#project-info{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    width: 98%;
+    padding: 2%;
+    margin: 0;
+    justify-content: space-around;
+
+}
+#videos{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+.video{
+    width: 100%;
+    height: 400px;
+}
+#project-review-form{
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+#review-btn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #808080;
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#review-section, #reviews{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 50px;
+}
+
+.review{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 100px;
+    align-items: center;
+    width: 300px;
+}
+
+.photo{
+    
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+}
+.photo img{
+    height: 100%;
+    width: 100%;
+     border-radius: 50%;
+}
+.name{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    
+
+}
+
+.author{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
